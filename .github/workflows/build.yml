@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: build/
+          path: ./web/build/
 
       - name: Setup build branch
         working-directory: ./
