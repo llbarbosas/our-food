@@ -39,7 +39,7 @@ jobs:
       - name: Setup build branch
         working-directory: ./
         run: |
-          git checkout gh-pages
+          git switch gh-pages
           mv web/build . 
           # Delete all folders except build
           ls | grep -v build | xargs rm -r
